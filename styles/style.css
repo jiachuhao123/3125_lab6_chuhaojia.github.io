@@ -1,0 +1,95 @@
+
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+/* Bootstrap default font-family is Helvetica Neue */
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 3px 3px 1px black;
+  
+}
+
+h2{
+	color: red;
+	
+}
+
+h3{
+	font-size:40px;
+	text-shadow: 5px 5px 5px black, 0px 0px 2px white; 
+	color:yellow;
+	
+}
+
+
+.jumbotron{
+	background-image: url("../images/cat.jpg");
+	background-size: cover;
+	height: 800px;
+
+}
+
+.pic img{
+  bottom: 650px;
+  left: 400px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+	
+
+}
+
+
+.t1 {
+	text-align:center;
+	margin: 0;
+	padding: 20px 0;
+	font-size: 50px;
+    color: white;
+}
+
+.t {
+	text-align:center;
+	margin: 0;
+	padding: 20px 0;
+	font-size: 75px;
+    text-shadow: 5px 5px 5px black, 0px 0px 2px black; 
+    color: white;
+}
+
+.b {
+	
+	background-color: black;
+	color: white;
+}
+
+.y {
+	
+	background-color: yellow;
+
+}
+
+.container-fluid {
+	
+	background-color: black;
+	color: white;
+}
+
+.block {
+
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  position: center;
+  
+}
+
+.container{
+	background-color: #90EE90;
+}
+

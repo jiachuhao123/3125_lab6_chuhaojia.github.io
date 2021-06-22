@@ -1,0 +1,401 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+<!-- as well as JQuery found here: https://www.w3schools.com/jquery/default.asp -->
+
+<!-- Images source: -->
+<!-- cat.jpg taken from https://www.bilibili.com/read/cv5180922/ -->
+<!-- dog.jpeg taken from https://www.bilibili.com/read/cv5180922/ -->
+<!-- hospital.jpg taken from http://www.billingsbridgeanimalhospital.ca/ -->
+<!-- vet1.jpg taken from http://www.51yuansu.com/search/38111.html -->
+<!-- vet2.jpg taken from http://www.51yuansu.com/search/38111.html -->
+<!-- vet3.jpg taken from http://www.51yuansu.com/search/38111.html -->
+
+
+
+<!-- Images source: -->
+<!-- The nine icons come from this bank of icons: https://icons8.com/icons.  I used the free downloadable ones.-->
+
+
+<!-- Text source: -->
+<!-- services and some hospital information taken from http://www.billingsbridgeanimalhospital.ca/ -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SEG3125_lab5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+  <!-- which is built on top of JQuery and offers additional possibilities -->
+  <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+  <link href="https://code.jquery.com/ui/1.12.1/themes/black-tie/jquery-ui.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	
+  <!-- Your own script -->
+
+  <script src="scripts/service.js"></script>
+
+  
+  <!-- Your own additional style sheet -->
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+  
+  
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+	  <li class="nav-item">
+        <a class="navbar-brand" href="#">Anime Hospital</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#first"><img src="images/home.png" alt="logo" style="width:30px;">&nbsp;About Us</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#second"><img src="images/doctor.png" alt="logo" style="width:30px;">&nbsp;Experts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#third"><img src="images/bill.png" alt="logo" style="width:30px;">&nbsp;Services</a>
+      </li>
+	<li class="nav-item">
+        <a class="nav-link" href="#fourth"><img src="images/cart.png" alt="logo" style="width:30px;">&nbsp;Make an appointment</a>
+      </li> 	  
+   </ul>
+  </div>  
+</nav>
+<br>
+
+
+<div class="jumbotron text-center text-white">
+  <p class = "t" >SEG3125 Animal Hospital</p>
+  
+  <div class="pic">
+	<img src="images/dog.jpeg">
+  </div>
+  
+  <p>Opening Hours:</p> 
+  <p>Monday - Friday  8:00 AM - 6:00 PM</p>
+  <p>Saturday         8:00 AM - 6:00 PM</p>
+  
+  <p class = "t1" >Committed to caring for the health of animals</p>
+  <br>
+  <br>
+  <br>
+  <p>Billings Bridge Animal Hospital</p>
+	<p>1220 Rooneys Lane</p>
+	<p>Ottawa, ON</p>
+	<p>K1H 7Y7</p>
+  <br>
+
+</div>
+
+		<br>
+
+        <div class="alert alert-danger alert-dismissible" style="background-color:yellow;" >
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong >Please read! </strong></br>Due to the impact of COVID-19 we require every owner to wear a mask. 
+		If you do not wear a mask, the staff will have the right to refuse you entry.
+        </div>
+
+
+<div class="container" id="first">
+		<h3><img src="images/hb.png" alt="logo" style="width:40px;">&nbsp;About us</h3>
+		<div >
+			<img src="images/hospital.jpg">
+		</div>
+		<br>
+        <h4 class="text-center">Let us tell you about our expertise</h3>
+		<br>
+		<p>SEG3125 Animal Hospital has been providing veterinary care in Ottawa for <mark>30 years</mark>. 
+		We are passionate about helping pets and educating owners. As a mid-sized practice catering to 
+		dogs and cats, we offer the utmost in <mark>personalized care</mark> from experienced vets. 
+		Your furry friend will feel at home in our caring, <mark>welcoming environment</mark>. We provide a modern 
+		facility which is kept clean and is staffed by happy <mark>professionals</mark>.
+		<br>
+		&nbsp;</p>
+
+</div>
+
+<br>
+	
+<div class="container p-3" id="second">
+
+		<h3><img src="images/2.png" alt="logo" style="width:40px;">&nbsp;Experienced vets</h3>
+        <div class="card-columns">
+            <div class="card " style="width:200px">
+                <img class="card-img-top" src="images/vet1.jpg" alt="Card image" style="width:198px; height:180px">
+                <div class="card-body">
+                    <h4 class="card-title">Jules</h4>
+                    <p class="card-text">Jules has been curing anime for 10 years. He is good at surgical caring.</p>
+					<!-- collapsible part -->
+                    <a href="#profile1" class="btn btn-primary" data-toggle="collapse">See available time</a>
+                    <div id="profile1" class="collapse p-3">
+                        <p>available on:</p>
+						<p>Monday</p>
+						<p>Tuesday</p>
+						<p>Wednesday</p>
+						<p>Thursday</p>	
+						<p>Friday</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card " style="width:200px">
+                <img class="card-img-top" src="images/vet2.jpg" alt="Card image" style="width:198px; height:180px">
+                <div class="card-body">
+                    <h4 class="card-title">Marry</h4>
+                    <p class="card-text">Marry has been curing anime for 9 years. She is good at new puppy / new kitten examinations.</p>
+                    <!-- collapsible part -->
+                    <a href="#profile2" class="btn btn-primary" data-toggle="collapse">See available time</a>
+                    <div id="profile2" class="collapse p-3">
+                        <p>available on:</p>
+						<p>Tuesday</p>
+						<p>Wednesday</p>
+						<p>Thursday</p>	
+						<p>Friday</p>
+						<p>Saturday</p>
+                    </div>
+                </div>
+            </div>
+			<div class="card " style="width:200px">
+                <img class="card-img-top" src="images/vet3.jpg" alt="Card image" style="width:198px; height:180px">
+                <div class="card-body">
+                    <h4 class="card-title">Einst</h4>
+                    <p class="card-text">Einst has been curing anime for 22 years. He is good at ultrasound, echocardiogram and endoscopy.</p>
+                    <!-- collapsible part -->
+                    <a href="#profile3" class="btn btn-primary" data-toggle="collapse">See available time</a>
+                    <div id="profile3" class="collapse p-3">
+                        <p>available on:</p>
+						<p>Monday</p>
+						<p>Tuesday</p>
+						<p>Friday</p>	
+						<p>Saturday</p>	
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>	
+<br>
+<br>	
+
+<div class="container" id="third">
+
+		<h3><img src="images/bb.png" alt="logo" style="width:40px;">&nbsp;Service description</h3>
+        <p>Here is a list of services offered</p> 
+		<h2>Remember!</h2> 
+		<p>The price may change according to the situation of your pet. 
+		You can contact us in advance and provide more detailed information about your pet. 
+		We will give you a more accurate price.</p>    		
+        <table class="table table-primary table-hover">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+				<th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>General medicine</td>
+                <td>We offer inpatient and outpatient medical treatment for eye, ear, skin, gastrointestinal,<br/>
+				respiratory, cardiac, urogenital, renal and hepatic diseases.</td>
+				<td>$ 30</td>
+            </tr>
+            <tr>
+                <td>Vaccinations and <br/>
+				parasite prevention</td>
+                <td>Billings Bridge Animal Hospital offers vaccination programs consistent with the American<br/>
+				Association of Animal Hospital (AAHA) vaccine guidelines. We carry a range of medications to<br/>
+				prevent intestinal worms, heartworm, and external parasites such as fleas, ticks and mange.</td>
+				<td>$ 100</td>
+            </tr>
+            <tr>
+                <td>Surgical care</td>
+                <td>We provide surgical services ranging from routine spays and neuters to more complex bladder, <br/>
+				ear, eye, gastrointestinal, orthopedic and tumour removal procedures. Our veterinarians are<br/>
+				experienced surgeons, and we can call upon the services of a mobile specialist if orthopaedic<br/>
+				work is needed. We also provide soft tissue surgery and tonometry procedure as well.</td>
+				<td>$ 200-500</td>
+            </tr>
+			<tr>
+                <td>Dentistry</td>
+                <td>In addition to our medical and surgical services, we are fully equipped with the latest in<br/>
+				dental equipment, including digital dental radiography. We offer routine cleanings (prophylaxis)<br/>
+				and dental extractions.</td>
+				<td>$ 50</td>
+            </tr>
+			<tr>
+                <td>New puppy / New kitten<br/>
+				examinations</td>
+                <td>Let us give your pet a healthy start with a new puppy or new kitten examination. We are<br/>
+				experienced in pediatric medicine and love seeing new pups and kittens.</td>
+				<td>$ 75</td>
+            </tr>
+            </tbody>
+        </table>
+		<br>
+
+</div>
+
+<br>
+<br>
+
+<form action="/action_page.php">
+
+<div class="container" id="fourth">
+
+
+	<h3><img src="images/cb.png" alt="logo" style="width:40px;">&nbsp;Book our service</h3>
+
+
+	<br><br>
+	<div class="container">
+        <h4><img src="images/cb.png" alt="logo" style="width:40px;">&emsp;Choose your service</h4>
+		<input type="radio" id="s1" name="s" value="s1" required>&emsp;General medicine<br>
+		<input type="radio" id="s2" name="s" value="s2" required>&emsp;Vaccinations and parasite prevention<br>
+		<input type="radio" id="s3" name="s" value="s3" required>&emsp;Surgical care<br>
+		<input type="radio" id="s4" name="s" value="s4" required>&emsp;Dentistry<br>
+		<input type="radio" id="s5" name="s" value="s5" required>&emsp;New puppy / New kitten examinations<br>
+		--------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+	</div>
+	<br>
+			
+	<div class="container">
+		<h4><img src="images/2.png" alt="logo" style="width:40px;">&emsp;Choose your vet</h4>
+		<p>Select your service</p>
+		<p>Different vets have different availalbe time!</p>
+		<input type="radio" id="v1" name="v" value="v1" onchange="vet1(this.id)" required>&emsp;Jules<br>
+		<input type="radio" id="v2" name="v" value="v2" onchange="vet2(this.id)" required>&emsp;Marry<br>
+		<input type="radio" id="v3" name="v" value="v3" onchange="vet3(this.id)" required>&emsp;Einst<br>
+--------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+	</div>
+	<br>
+			
+    <div class="container">
+		<h4><img src="images/3.png" alt="logo" style="width:40px;">&emsp;Choose a date</h4>
+        <!-- Bootstrap has various input components. Some examples are given here: -->
+        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+        <div class="form-group row">
+			<label for="dateTimeInput" class="col-2 col-form-label&emsp;">Choose your date</label>
+				<div class="col-10">
+					<input type="text" id="datepicker" required>
+                </div>
+				--------------------------------------------------------------------------------------
+				----------------------------------------------------------------------------------
+        </div>
+
+     </div>
+	 <br>
+	 
+	 <div class="container">
+		<h4><img src="images/4.png" alt="logo" style="width:40px;">&emsp;Add Your info</h4>
+			<p>Your information so we can contact you</p>
+			Are you:<br>
+			<input type="radio" name="sex" value="male" required>&emsp;Male<br>
+			<input type="radio" name="sex" value="female" required>&emsp;Female<br>
+			<br>
+			First name
+			<br>
+			<input type="text" name="First name" placeholder="Mike " required>
+			<br>
+			Last name<br><input type="text" name="Last name" placeholder="James" required>
+			<br>
+			Email Address<br><input type="text" name="Email Address" placeholder="example@example.com" 
+			pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+			<br>
+			Phone number<br><input type="text" name="Phone number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+			<br>
+
+	  </div>
+	  <br>
+	  
+	  <div class="container">
+		<h4><img src="images/5.png" alt="logo" style="width:40px;">Add your payment method</h4>
+			Credit Card&emsp; <input type="text" name="debit" placeholder="1111-1111-1111-1111" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+			title="We ask for your credit card number in case of no-show, 20$ will be charged." required>
+			
+			&emsp;CSV&emsp;<input type="text" name="CSV" placeholder="123" 
+			pattern="[0-9]{3}" required>
+		<br>
+		<br>
+		
+		<button type="submitbutton" id="submitbutton" type="button" class="block">Sumbit my order</button>
+		
+		</div>
+	
+	<br>
+
+</div>
+</form>
+<br>
+
+<div class="container-fluid">
+
+  <div class="row">
+  
+	<div class="col">
+
+    </div>
+  
+    <div class="col">
+	  <br>
+      <h3 class="text-white">Contact Us</h3>
+	  <br>
+      <p>Billings Bridge Animal Hospital</p>
+	  <p>1220 Rooneys Lane</p>
+	  <p>Ottawa, ON</p>
+	  <p>K1H 7Y7</p>
+	  <p>Phone: 613-737-5007</p>
+      <p>Fax: 613-737-7544</p>
+	  <p>Email: bbah@live.com</p>
+    </div>
+	
+    <div class="col">
+	  <br>
+      <h3 class="text-white">Hours</h3>
+	  <br>
+	  <br>
+	  <br>
+      <p>Monday - Friday  8:00 AM - 6:00 PM</p>
+      <p>Saturday         8:00 AM - 6:00 PM</p>
+    </div>
+	
+    <div class="col">
+	  <br>
+      <h3 class="text-white">Service Area</h3>   
+	  <br>
+      <p>Ottawa</p>
+	  <p>Billings Bridage</p>
+      <p>Alta Vista</p>
+	  <p>The Glebe</p>
+	  <p>Old Ottawa South</p>
+	  <p>Hunt Club and other areas</p>
+    </div >
+
+	<div class="col">
+
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+
+</html>
